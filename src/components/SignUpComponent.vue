@@ -36,6 +36,10 @@
 .space{
     margin: 10px;
 }
+h3{
+    color: $blue;
+    font-weight: 900;
+}
 
 .cont-fin{
     display: flex;
