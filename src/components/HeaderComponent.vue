@@ -4,7 +4,7 @@
         <img src="../assets/img/dc-logo.png" alt="" class="logo">
 
         <!-- nav con lista contatti -->
-        <nav>
+        <nav class="shift">
             <ul>
              <li v-for="(link,index) in links" :key="index">
              <a :href="link.url" :class="{'active':link.current}">{{link.text}}</a>
@@ -87,6 +87,7 @@ header{
     max-width: 1200px;
     margin: 0 auto;
     align-items: center;
+    padding: 20px;
     
     .logo{
         width: 100px;
@@ -110,6 +111,36 @@ header{
         
 
     }
+    nav.shift ul li a {
+  position:relative;
+  z-index: 1;
+}
+nav.shift ul li a:hover {
+  color: #0f0f0e;
+}
+nav.shift ul li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: $blue;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+nav.shift ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
 
 }
 </style>
