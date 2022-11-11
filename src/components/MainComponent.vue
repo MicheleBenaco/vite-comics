@@ -2,7 +2,8 @@
     <main>
     <div class="container">
         <div class="row">
-            <ComicsComponent v-for="(comic,index) in comics" :key="index"/>
+            <ComicsComponent v-for="(comic,index) in comics" :key="index" 
+            :img="comic.thumb" :price="comic.price" :series="comic.series" :type="comic.type" />
         </div>
 
     </div>
@@ -13,12 +14,17 @@
 </template>
 
 <script>
-import comics from '../data/comics.js';
+import {data_comics} from '../data/comics.js';
 import ComicsComponent from './ComicsComponent.vue';
 
     export default {
     name: "MainComponent",
-    components: { ComicsComponent }
+    components: { ComicsComponent },
+    data(){
+        return{
+            comics: data_comics,
+        }
+    }
 }
 </script>
 
@@ -28,6 +34,7 @@ import ComicsComponent from './ComicsComponent.vue';
     main{
         background-color: $dark;
         
+        
         h1{
         color: white;
         padding: 30px;
@@ -35,10 +42,19 @@ import ComicsComponent from './ComicsComponent.vue';
 
     .row{
         display: flex;
-        .col{
-            flex-basis: calc(100% / 6);
-            padding: 10px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        margin-bottom: 20px;
 
+        .col{
+           
+            flex-basis: calc(100% /6);
+            padding: 9px;
+
+            h4{
+                color: white;
+                padding: 5px;
+            }
            
         }
 
