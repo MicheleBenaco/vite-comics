@@ -2,28 +2,28 @@
     <section class="bg-color-cont">
     <div class="container dflex section-cont ">
         <div class="dflex card">
-        <img src="../assets/img/buy-comics-digital-comics.png" alt="" class="img-shop"> 
-        <h3>Digital Comics </h3>
+            <img src="../assets/img/buy-comics-digital-comics.png" alt="" class="img-shop"> 
+            <h3>Digital Comics </h3>
         </div>
 
         <div class="dflex card">
-        <img src="../assets/img/buy-comics-merchandise.png" alt="" class="img-shop">
-        <h3>dc merchandise </h3>
+            <img src="../assets/img/buy-comics-merchandise.png" alt="" class="img-shop">
+            <h3>dc merchandise </h3>
         </div>
 
         <div class="dflex card">
-        <img src="../assets/img/buy-comics-subscriptions.png" alt="" class="img-shop">
-        <h3>Subscription </h3>
+            <img src="../assets/img/buy-comics-subscriptions.png" alt="" class="img-shop">
+            <h3>Subscription </h3>
         </div>
 
         <div class="dflex card">
-        <img src="../assets/img/buy-comics-shop-locator.png" alt="" class="img-shop">
-        <h3>comics shop locator </h3>
+            <img src="../assets/img/buy-comics-shop-locator.png" alt="" class="img-shop">
+            <h3>comics shop locator </h3>
         </div>
+        
         <div class="dflex card">
             <img src="../assets/img/buy-dc-power-visa.svg" alt="" class="img-shop">
-            <h3>dc power visa  </h3>
-            
+            <h3>dc power visa  </h3> 
         </div>
         
     </div>
